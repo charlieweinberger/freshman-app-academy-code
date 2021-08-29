@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Choose Your Own Adventure</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<h1>The Nova Resort</h1>
+
+<div class="container">
+  <div class="column" id="col1">
+    <h3>Your Adventure</h3>
+      <div id="adventuretext"></div>
+  </div>
+  <div class="column" id="col2">
+    <h3>Inventory</h3>
+      <div id="chesttext"></div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="column">
+      <input type="text" placeholder="Command" class="userinput" id="usercommand"/>
+  </div>
+</div>
+
+<div class="container spacedcontainer">
+    <div class="column">
+      <h3>Actions</h3>
+      <ul>
+        <li><span class="commandtext">d</span> or <span class="commandtext">description</span> - Description of the current room.</li>
+        <li><span class="commandtext">things</span> - List of things in current room.</li>
+        <li><span class="commandtext">go &lt;direction&gt;</span> - Moves you in the direction specified (north, south, east, or west).</li>
+        <li><span class="commandtext">look &lt;thing&gt;</span> or <span class="commandtext">l &lt;thing&gt;</span> - Description of thing.</li>
+        <li><span class="commandtext">take &lt;thing&gt;</span> or <span class="commandtext">t &lt;thing&gt;</span> - Takes thing and puts it in your inventory chest.</li>
+        <li><span class="commandtext">use &lt;thing&gt;</span> or <span class="commandtext">u &lt;thing&gt;</span> - Uses the specified thing (but only if it is in your inventory chest!).</li>
+        <li><span class="commandtext">give &lt;thing&gt;</span> or <span class="commandtext">g &lt;thing&gt;</span> - Gives the specified item to Larry. </li>
+        <li><span class="commandtext">remove &lt;thing&gt;</span> or <span class="commandtext">r &lt;thing&gt;</span> - Removes the specified thing from your inventory.</li>
+        <li><span class="commandtext">play &lt;number&gt;</span> or <span class="commandtext">p &lt;number&gt;</span> - Plays the specified game in the casino.</li>
+      </ul>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="adventure.js"></script>
+
+</body>
+</html>

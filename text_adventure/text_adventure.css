@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Uncial+Antiqua|Open+Sans:300&display=swap");
+:root {
+  --p-color: rgb(140, 194, 245);
+  --h1-color: rgb(0, 174, 315);
+  --header-color: rgba(68, 51, 106, 0);
+  --container-color: rgba(75, 30, 101, 0.8);
+  --nav-color: rgb(130, 54, 90);
+  --nav-hover-color: rgb(72, 8, 38);
+  --nav-hover-link-color: white;
+  --band-border: rgb(39, 89, 128);
+  --album-border: rgb(22, 69, 105);
+}
+
+body {
+  background: url("https://cdn.glitch.com/22582510-ea6c-4a0d-8493-e4693c6e9320%2F170209131056-qasr-pool.jpg?v=1580197425574");
+  padding: 0px;
+  margin: 50px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Uncial Antiqua";
+  font-size: 72px;
+  background-color: var(--header-color);
+  padding-top: 0px;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--h1-color);
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-family: "Open Sans";
+  color: var(--p-color);
+}
+
+p,
+ul {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: var(--p-color);
+}
+
+/***** FLEX BOX *****/
+
+.container {
+  display: flex;
+
+  background-color: var(--container-color);
+  padding: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.column {
+  flex: 1;
+}
+
+#col1 {
+  flex: 3;
+}
+
+.spacedcontainer {
+  margin-top: 50px !important;
+}
+
+/****** USER INPUT *******/
+
+.userinput {
+  width: 75%;
+  font-size: 18px;
+  font-family: "Open Sans";
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/****** TEXT AREAS *******/
+
+#adventuretext {
+  height: 260px;
+  background-color: rgba(30, 54, 190, 0.5);
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: var(--p-color);
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+#chesttext {
+  height: 260px;
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: var(--p-color);
+  padding: 10px;
+}
+
+.commandtext {
+  color: rgb(163, 248, 255);
+}
